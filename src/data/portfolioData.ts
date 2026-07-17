@@ -147,15 +147,15 @@ export const projects: readonly Project[] = [
 // ============================================
 
 export const experience: readonly ExperienceItem[] = [
-  {
-    title: 'Full-Stack Web Developer',
-    company: 'VisionLand Schools (Remote)',
-    period: '01/2025 — 05/2025',
-    description:
-      'Designed and deployed a custom, responsive website to digitize school information and improve parent-teacher communication.',
-    icon: 'code',
-    isCurrent: true,
-  },
+  // {
+  //   title: 'Full-Stack Web Developer',
+  //   company: 'VisionLand Schools (Remote)',
+  //   period: '01/2025 — 05/2025',
+  //   description:
+  //     'Designed and deployed a custom, responsive website to digitize school information and improve parent-teacher communication.',
+  //   icon: 'code',
+  //   isCurrent: true,
+  // },
   {
     title: 'QA Tester',
     company: 'Test.io (Remote)',
