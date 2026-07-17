@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+//@ts-ignore
 import * as THREE from 'three';
 
 // Vanta's npm package assigns itself to window.VANTA and expects THREE globally.
