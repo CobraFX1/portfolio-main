@@ -34,9 +34,9 @@ export function useVanta<T extends HTMLElement>(isDark: boolean) {
               color: isDark ? 0x818cf8 : 0x4f46e5,
               backgroundColor: isDark ? 0x0a0a0a : 0xfafafa,
               backgroundAlpha: 0.0,
-              points: 12.0,
-              maxDistance: 20.0,
-              spacing: 20.0,
+              points: 15.0,
+              maxDistance: 24.0,
+              spacing: 16.0,
               showDots: true,
             });
             setVantaEffect(effect);
@@ -61,9 +61,9 @@ export function useVanta<T extends HTMLElement>(isDark: boolean) {
           color: isDark ? 0x818cf8 : 0x4f46e5,
           backgroundColor: isDark ? 0x0a0a0a : 0xfafafa,
           backgroundAlpha: 0.0,
-          points: 12.0,
-          maxDistance: 20.0,
-          spacing: 20.0,
+          points: 15.0,
+          maxDistance: 24.0,
+          spacing: 16.0,
           showDots: true,
         });
         setVantaEffect(effect);

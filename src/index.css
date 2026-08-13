@@ -9,6 +9,12 @@
   html {
     scroll-behavior: smooth;
   }
+
+  @media (pointer: fine) {
+    body, a, button, [role="button"] {
+      cursor: none !important;
+    }
+  }
 }
 
 /* ======================================
@@ -131,14 +137,27 @@
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     border-radius: inherit;
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0);
-    transition: box-shadow 0.4s ease;
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(99, 102, 241, 0.08),
+      transparent 40%
+    );
     z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
   }
 
-  .dark .glass:hover .glow-effect::before,
-  .dark .group:hover > .glow-effect::before {
-    box-shadow: 0 0 40px rgba(99, 102, 241, 0.15);
+  .dark .glow-effect::before {
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(99, 102, 241, 0.15),
+      transparent 40%
+    );
+  }
+
+  .glass:hover .glow-effect::before,
+  .group:hover > .glow-effect::before {
+    opacity: 1;
   }
 
   /* Animation Delays for Blobs */

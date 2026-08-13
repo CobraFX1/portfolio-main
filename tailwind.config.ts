@@ -95,6 +95,9 @@ export default {
          ────────────────────────────────── */
       animation: {
         'blob': 'blob 10s infinite',
+        'float-slow': 'float-slow 15s ease-in-out infinite',
+        'float-slower': 'float-slow 22s ease-in-out infinite reverse',
+        'float-slowest': 'float-slow 30s ease-in-out infinite',
       },
       keyframes: {
         blob: {
@@ -102,6 +105,11 @@ export default {
           '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
           '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
           '100%': { transform: 'translate(0px, 0px) scale(1)' },
+        },
+        'float-slow': {
+          '0%': { transform: 'translateY(0) rotate(0deg)' },
+          '50%': { transform: 'translateY(-30px) rotate(15deg)' },
+          '100%': { transform: 'translateY(0) rotate(0deg)' },
         },
       },
 

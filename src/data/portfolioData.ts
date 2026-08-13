@@ -71,6 +71,7 @@ export const projects: readonly Project[] = [
     gradientTo: 'to-purple-500/10',
     iconColor: 'text-primary/60 dark:text-primary/40',
     hoverRotate: 'group-hover:-rotate-2',
+    image: '/assets/3d/eduvid_3d_1786472520972.jpg',
   },
   {
     title: 'Review Pulse',
@@ -84,6 +85,7 @@ export const projects: readonly Project[] = [
     gradientTo: 'to-teal-500/10',
     iconColor: 'text-teal-500/60 dark:text-teal-500/40',
     hoverRotate: 'group-hover:rotate-1',
+    image: '/assets/3d/review_pulse_3d_1786472531732.jpg',
   },
   {
     title: 'Skycast Weather',
@@ -97,6 +99,7 @@ export const projects: readonly Project[] = [
     gradientTo: 'to-cyan-500/10',
     iconColor: 'text-blue-500/60 dark:text-cyan-500/40',
     hoverRotate: 'group-hover:-rotate-1',
+    image: '/assets/3d/skycast_3d_1786472542361.jpg',
   },
   {
     title: 'Tic Tac Toe',
@@ -110,6 +113,7 @@ export const projects: readonly Project[] = [
     gradientTo: 'to-red-500/10',
     iconColor: 'text-indigo-500/60 dark:text-indigo-400/40',
     hoverRotate: 'group-hover:rotate-1',
+    image: '/assets/3d/tic_tac_toe_3d_1786472561170.jpg',
   },
   // ── Upcoming Builds (Day 4 placeholders) ──────────────
   {
@@ -125,6 +129,7 @@ export const projects: readonly Project[] = [
     iconColor: 'text-violet-500/60 dark:text-violet-400/40',
     hoverRotate: 'group-hover:-rotate-1',
     isUpcoming: true,
+    image: '/assets/3d/link_analytics_3d_1786472571512.jpg',
   },
   {
     title: 'SaaS Dashboard + Stripe',
@@ -139,6 +144,7 @@ export const projects: readonly Project[] = [
     iconColor: 'text-amber-500/60 dark:text-amber-400/40',
     hoverRotate: 'group-hover:rotate-1',
     isUpcoming: true,
+    image: '/assets/3d/saas_dashboard_3d_1786472581489.jpg',
   },
 ] as const;
 
@@ -147,15 +153,15 @@ export const projects: readonly Project[] = [
 // ============================================
 
 export const experience: readonly ExperienceItem[] = [
-  // {
-  //   title: 'Full-Stack Web Developer',
-  //   company: 'VisionLand Schools (Remote)',
-  //   period: '01/2025 — 05/2025',
-  //   description:
-  //     'Designed and deployed a custom, responsive website to digitize school information and improve parent-teacher communication.',
-  //   icon: 'code',
-  //   isCurrent: true,
-  // },
+  {
+    title: 'Full-Stack Web Developer',
+    company: 'VisionLand Schools (Remote)',
+    period: '01/2025 — 05/2025',
+    description:
+      'Designed and deployed a custom, responsive website to digitize school information and improve parent-teacher communication.',
+    icon: 'code',
+    isCurrent: true,
+  },
   {
     title: 'QA Tester',
     company: 'Test.io (Remote)',

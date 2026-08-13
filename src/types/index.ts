@@ -31,6 +31,8 @@ export interface Project {
   readonly hoverRotate: string;
   /** Whether this is a placeholder for an upcoming build */
   readonly isUpcoming?: boolean;
+  /** Optional 3D asset image URL to use instead of an icon */
+  readonly image?: string;
 }
 
 /** A work experience entry on the timeline */

@@ -1,4 +1,5 @@
 import { heroData } from '../data/portfolioData';
+import MagneticButton from './MagneticButton';
 
 function Hero() {
   return (
@@ -38,21 +39,23 @@ function Hero() {
         data-aos-delay="300"
         className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
       >
-        <a
+        <MagneticButton
+          as="a"
           href="#projects"
-          className="bg-primary hover:bg-primary-bold text-white px-8 py-4 rounded-full text-base font-bold transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/30 hover:-translate-y-1"
+          className="bg-primary hover:bg-primary-bold text-white px-8 py-4 rounded-full text-base font-bold flex items-center justify-center gap-2 shadow-xl shadow-primary/30"
         >
           {heroData.ctaPrimary}
           <span className="material-symbols-outlined text-sm">
             arrow_downward
           </span>
-        </a>
-        <a
+        </MagneticButton>
+        <MagneticButton
+          as="a"
           href="#contact"
-          className="glass text-slate-800 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-8 py-4 rounded-full text-base font-bold transition-all flex items-center justify-center"
+          className="glass text-slate-800 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 px-8 py-4 rounded-full text-base font-bold flex items-center justify-center"
         >
           {heroData.ctaSecondary}
-        </a>
+        </MagneticButton>
       </div>
 
       {/* Tech Tools Marquee Strip */}

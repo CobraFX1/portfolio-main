@@ -51,23 +51,15 @@ function Navbar() {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2.5 rounded-full bg-surface dark:bg-surface-dark text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-primary/5 transition-all outline-none"
-              aria-label="Toggle Dark Mode"
+              className="p-2.5 rounded-full bg-surface dark:bg-surface-dark text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-primary/5 transition-all outline-none overflow-hidden relative w-10 h-10 flex items-center justify-center"
+              aria-label="Toggle Theme"
             >
-              <span
-                className={`material-symbols-outlined text-[20px] ${
-                  isDark ? 'block' : 'hidden'
-                }`}
-              >
-                light_mode
-              </span>
-              <span
-                className={`material-symbols-outlined text-[20px] ${
-                  isDark ? 'hidden' : 'block'
-                }`}
-              >
-                dark_mode
-              </span>
+              <div className={`transition-all duration-500 ease-spring absolute flex items-center justify-center ${isDark ? 'rotate-0 translate-y-0 opacity-100' : 'rotate-90 translate-y-8 opacity-0'}`}>
+                <span className="material-symbols-outlined text-[20px]">light_mode</span>
+              </div>
+              <div className={`transition-all duration-500 ease-spring absolute flex items-center justify-center ${!isDark ? 'rotate-0 translate-y-0 opacity-100' : '-rotate-90 -translate-y-8 opacity-0'}`}>
+                <span className="material-symbols-outlined text-[20px]">dark_mode</span>
+              </div>
             </button>
 
             {/* Let's Talk Button (Desktop) */}
